@@ -71,6 +71,7 @@ public class CartActivity extends AppCompatActivity {
             _Helper.cartModels.clear();
             CartAdapter cartAdapter = new CartAdapter(_Helper.cartModels);
             binding.recyclerView.setAdapter(cartAdapter);
+            startActivity(new Intent(this, ReviewActivity.class).setFlags(Intent.FLAG_ACTIVITY_NEW_TASK | Intent.FLAG_ACTIVITY_CLEAR_TASK));
 
             Toast.makeText(this, "Successfully checkout the cart.", Toast.LENGTH_SHORT).show();
         } else if (responseModel.code == 400) {
