@@ -20,8 +20,7 @@ import java.util.List;
 import java.util.concurrent.ExecutionException;
 
 public class _Helper {
-    //private static String baseURL = "http://10.0.2.2:5000/api/";
-    private static String baseURL = "https://3c70-103-135-212-211.ngrok-free.app/api/";
+    private static String baseURL = "http://10.0.2.2:5000/api/";
     public static String token = "";
     public static long backPressedTime;
     private static String baseImageURL = baseURL.replace("api/", "images/");
